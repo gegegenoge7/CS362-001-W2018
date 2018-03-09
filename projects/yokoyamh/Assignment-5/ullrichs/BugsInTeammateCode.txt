@@ -1,0 +1,14 @@
+BUGS
+	1. isValid() method of Appt.java. 
+		There is a bug in which an appointment that has a minute value of 60 is accepted
+			This bug was exposed by test03 of ApptTest.java's assertEquals() on line 94.
+			
+	2. IsLeapYear() method in CalendarUtil.java
+		There is a bug in which leap years are set to all even years, and not every 4 years.
+			This bug was exposed by test03 of ApptTest.java's assertEquals() on line 91.
+			
+	3. CalDay() method in CalDay.java 
+		There is a bug in which month is set to day for a calDay object that was initialized
+		by calling the constructor with a gregorian calendar object passed in. 
+			This bug was exposed by test01 of CalDayTest.java's assertEquals() method on line
+			67.
